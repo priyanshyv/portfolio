@@ -108,7 +108,7 @@ const codingProfileItems = [
   {
     title: "LeetCode",
     link: "https://leetcode.com/u/priyanshyadav/", 
-    description: "Contest Rating - 1579",
+    description: "Contest Rating - 1570",
     details: [
       "Participated in multiple coding contests.",
       "Solved problems related to algorithms and data structures."
