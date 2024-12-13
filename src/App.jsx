@@ -36,7 +36,7 @@ const buildingItems = [
 const projectsItems = [
   {
     title: "StudyNotion",
-    link: "https://padhaicrow.vercel.app/", // Replace with the actual link to the project
+    link: "https://padhaicrow.vercel.app/", 
     description: "An ed-tech platform built on the MERN stack for course creation, consumption, and rating.",
     technologies: "(MongoDB, ExpressJS, ReactJS, NodeJS, WebRTC, Socket.IO)",
     date: "Mar 2024 – Sept 2024",
@@ -52,7 +52,7 @@ const projectsItems = [
   },
   {
     title: "Reposheet",
-    link: "https://reposheet.onrender.com/", // Replace with the actual link to the project
+    link: "https://reposheet.onrender.com/", 
     description: "A GitHub-like app, allowing users to manage repositories and host their own Git server on AWS.",
     technologies: "(ExpressJS, ReactJS, NodeJS, AWS)",
     date: "Jul 2024 – Aug 2024",
@@ -66,7 +66,7 @@ const projectsItems = [
   },
   {
     title: "Musical Showcase",
-    link: "https://github.com/priyanshyv/SM-project", // Replace with the actual link to the project
+    link: "https://github.com/priyanshyv/SM-project",
     description: "A fan webpage for SEEDHEMAUT, featuring hip-hop content and wishlist functionality.",
     technologies: "(ReactJS, Tailwind, CSS, JavaScript, HTML, XAMPP, MySQL)",
     date: "Dec 2023 – Mar 2024",
@@ -78,7 +78,7 @@ const projectsItems = [
   },
   {
     title: "Video Call App",
-    link: "https://video-call-mern-front.onrender.com/", // Replace with the actual link to the project
+    link: "https://video-call-mern-front.onrender.com/",
     description: "A real-time video call application using WebRTC and Socket.IO.",
     technologies: "(ReactJS, WebRTC, Socket.IO)",
     date: "Aug 2024 – Sept 2024",
@@ -91,7 +91,7 @@ const projectsItems = [
   },
   {
     title: "Online Code Compiler",
-    link: "https://onlinecoderunner.onrender.com/", // Replace with the actual link to the project
+    link: "https://onlinecoderunner.onrender.com/",
     description: "An online code compiler using the Monaco editor, supporting multiple programming languages.",
     technologies: "(ReactJS, Monaco Editor, WebAssembly)",
     date: "Oct 2024 – Nov 2024",
@@ -107,8 +107,8 @@ const projectsItems = [
 const codingProfileItems = [
   {
     title: "LeetCode",
-    link: "https://leetcode.com/u/priyanshyadav/", // Replace with the actual link to your LeetCode profile
-    description: "Contest Rating - 1550",
+    link: "https://leetcode.com/u/priyanshyadav/", 
+    description: "Contest Rating - 1579",
     details: [
       "Participated in multiple coding contests.",
       "Solved problems related to algorithms and data structures."
@@ -116,7 +116,7 @@ const codingProfileItems = [
   },
   {
     title: "GeeksforGeeks",
-    link: "https://www.geeksforgeeks.org/user/priyanshyadav/", // Replace with the actual link to your GeeksforGeeks profile
+    link: "https://www.geeksforgeeks.org/user/priyanshyadav/",
     description: "Top 50 in Manipal University Jaipur, Contest Rating - 1750",
     details: [
       "Ranked among the top 50 coders from Manipal University Jaipur.",
@@ -124,6 +124,22 @@ const codingProfileItems = [
     ]
   }
 ];
+// Fetch API data
+fetch("https://alfa-leetcode-api.onrender.com/priyanshyadav/contest")
+  .then(response => response.json())
+  .then(data => {
+    // Extract contestRating from the API response
+    const contestRating = data.contestRating;
+
+    // Dynamically update the description field
+    codingProfileItems[0].description = `Contest Rating - ${contestRating.toFixed(2)}`;
+
+    // Log updated array to verify changes
+    console.log(codingProfileItems);
+  })
+  .catch(error => {
+    console.error("Error fetching contest rating:", error);
+  });
 
 export default App;
 
