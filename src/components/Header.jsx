@@ -1,9 +1,20 @@
 import { SiRetroarch } from "react-icons/si";
 import { CiLocationOn } from "react-icons/ci";
+import DecryptedText from './DecryptedText'
 const Header = () => {
     return (
       <header className="space-y-4">
-        <h1 className="text-3xl font-bold flex items-center justify-between text-slate-200">Priyansh Yadav<SiRetroarch color="white" className="ml-50"/></h1>
+        <h1 className="text-3xl font-bold flex items-center justify-between text-slate-200">
+          
+        
+        <DecryptedText
+          text="Priyansh Yadav"
+          animateOn="view"
+          revealDirection="center"
+        />
+    
+          
+          <SiRetroarch color="white" className="ml-50"/></h1>
         <p className="flex items-center text-sm ">
         <CiLocationOn className="mr-1 " />
         <span className="text-slate-200">Jaipur, India</span>
