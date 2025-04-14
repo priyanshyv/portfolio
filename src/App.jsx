@@ -74,11 +74,7 @@ const buildingItems = [
 const projectsItems = [
   {
     title: "StudyNotion",
-<<<<<<< HEAD
     link: "https://padhaicrow.vercel.app/",
-=======
-    link: "https://padhaicrow.vercel.app/", 
->>>>>>> c7733e4f87fa549212417e239de81e26636c97f3
     description: "An ed-tech platform built on the MERN stack for course creation, consumption, and rating.",
     technologies: "(MongoDB, ExpressJS, ReactJS, NodeJS, WebRTC, Socket.IO)",
     date: "Mar 2024 – Sept 2024",
@@ -93,11 +89,7 @@ const projectsItems = [
   },
   {
     title: "Reposheet",
-<<<<<<< HEAD
     link: "https://reposheet.onrender.com/",
-=======
-    link: "https://reposheet.onrender.com/", 
->>>>>>> c7733e4f87fa549212417e239de81e26636c97f3
     description: "A GitHub-like app, allowing users to manage repositories and host their own Git server on AWS.",
     technologies: "(ExpressJS, ReactJS, NodeJS, AWS)",
     date: "Jul 2024 – Aug 2024",
@@ -145,46 +137,7 @@ const projectsItems = [
   }
 ];
 
-<<<<<<< HEAD
 
-=======
-const codingProfileItems = [
-  {
-    title: "LeetCode",
-    link: "https://leetcode.com/u/priyanshyadav/", 
-    description: "Contest Rating - 1570",
-    details: [
-      "Participated in multiple coding contests.",
-      "Solved problems related to algorithms and data structures."
-    ]
-  },
-  {
-    title: "GeeksforGeeks",
-    link: "https://www.geeksforgeeks.org/user/priyanshyadav/",
-    description: "Top 50 in Manipal University Jaipur, Contest Rating - 1750",
-    details: [
-      "Ranked among the top 50 coders from Manipal University Jaipur.",
-      "Contributed articles and solutions on various topics in computer science."
-    ]
-  }
-];
-// Fetch API data
-fetch("https://alfa-leetcode-api.onrender.com/priyanshyadav/contest")
-  .then(response => response.json())
-  .then(data => {
-    // Extract contestRating from the API response
-    const contestRating = data.contestRating;
-
-    // Dynamically update the description field
-    codingProfileItems[0].description = `Contest Rating - ${contestRating.toFixed(2)}`;
-
-    // Log updated array to verify changes
-    console.log(codingProfileItems);
-  })
-  .catch(error => {
-    console.error("Error fetching contest rating:", error);
-  });
->>>>>>> c7733e4f87fa549212417e239de81e26636c97f3
 
 export default App;
 
