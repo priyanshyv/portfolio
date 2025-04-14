@@ -7,36 +7,36 @@ const Connect = () => {
 
         
         <p className="text-gray-400 font-retro mr-5 text-xl hover:text-white transition-colors">
-          <a href="mailto:priyansh.yv7@gmail.com">
+          <a href="mailto:priyansh.yv7@gmail.com" target="_blank">
             gmail
           </a>
           <GiArrowCursor/>
         </p>
         <p className="text-gray-400 font-retro mr-5 text-xl hover:text-white transition-colors">
-          <a href="https://www.linkedin.com/in/priyanshyv">
+          <a href="https://www.linkedin.com/in/priyanshyv" target="_blank" rel="noopener noreferrer">
             linkedin
           </a>
           <GiArrowCursor />
         </p>
         <p className="text-gray-400 font-retro mr-5 text-xl hover:text-white transition-colors">
-          <a href="https://x.com/priyansh_yv">
+          <a href="https://x.com/priyansh_yv" target="_blank">
             x.com
           </a>
           <GiArrowCursor />
         </p>
         <p className="text-gray-400 font-retro mr-5 text-xl hover:text-white transition-colors">
-          <a href="https://github.com/priyanshyv">
+          <a href="https://github.com/priyanshyv" target="_blank" rel="noopener noreferrer">
             github
           </a>
           <GiArrowCursor/>
         </p>
         <p className="text-gray-400 font-retro mr-5 text-xl hover:text-white transition-colors">
-          <a href="https://cal.com/priyanshyv">
+          <a href="https://cal.com/priyanshyv" target="_blank">
             book a call
           </a>
           <GiArrowCursor/>
         </p>
-
+      
       </div>
       </section>
     );
