@@ -24,7 +24,7 @@ const Header = () => {
         <p className="text-xl text-gray-400 font-retro">In the past I’ve developed the <a href="https://youtu.be/AROVBbZM3A0" className="underline hover:text-white transition-colors" target="_blank">Reposheet</a>,  <a href="https://padhaicrow.vercel.app/" className="underline hover:text-white transition-colors" target="_blank">StudyNotion</a> and some small but good projects.</p>
         <p className="flex items-center text-green-400 text-sm">
                     <a
-              href="https://www.linkedin.com/in/your-profile/"
+              href="https://www.linkedin.com/in/priyanshyv/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center text-yellow-400 text-sm hover:underline"
