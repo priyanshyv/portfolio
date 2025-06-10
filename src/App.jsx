@@ -4,6 +4,7 @@ import Section from './components/Sections';
 import NowSection from './components/NowSection';
 import Connect from './components/Connect';
 import Footer from './components/Footer';
+import WorkExperience from './components/WorkExperience';
 import { useEffect, useState } from 'react';
 
 const App = () => {
@@ -46,11 +47,26 @@ const App = () => {
     }
   ];
 
+  // const buildingItems = [
+  //   {
+  //     title: "Sealth Startup (ecom)",
+  //     description: "Full Stack Developer - SDE Intern",
+  //     details: [
+  //       "Building a full e-commerce site from scratch with modern technologies",
+  //       "Implementing user authentication, product catalog, and shopping cart functionality",
+  //       "Developing both frontend UI/UX and backend APIs and database architecture",
+  //       "Working on payment gateway integration and order management system"
+  //     ],
+  //     date: "Jun 2025 - Present"
+  //   }
+  // ];
+
   return (
     <div className="min-h-screen flex flex-col bg-black text-white font-sans">
       <div className="flex-grow px-6 py-12">
         <div className="max-w-2xl mx-auto">
           <Header />
+          <WorkExperience />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
             {/* <Section title="Building" items={buildingItems} /> */}
             <Section title="Projects" items={projectsItems} />

@@ -3,7 +3,7 @@ import { CiLocationOn } from "react-icons/ci";
 import DecryptedText from './DecryptedText'
 const Header = () => {
     return (
-      <header className="space-y-4">
+      <header className="space-y-4 border-b border-gray-800 pb-8">
         <h1 className="text-3xl font-bold flex items-center justify-between text-slate-200">
           
         
@@ -14,7 +14,7 @@ const Header = () => {
         />
     
           <SiRetroarch color="white" className="ml-50"/>
-          
+
         </h1>
         <p className="flex items-center text-sm ">
         <CiLocationOn className="mr-1 " />
